@@ -42,5 +42,9 @@ await promptBtn.click();
  //added by Ram
  const promptBtn = await page.locator("//button[contains(text(), 'prompt box')]");
 await promptBtn.click();
+const check = await page.locator("//button[contains(text(), 'prompt box')]");
+await check.click();
+
+
 
 
