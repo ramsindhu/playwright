@@ -38,4 +38,15 @@ await promptBtn.click();
 
  //if didn't giving accept playwright auotomatically cancel 
 
+
+ //added by Ram
+ const promptBtn = await page.locator("//button[contains(text(), 'prompt box')]");
+await promptBtn.click();
+const check = await page.locator("//button[contains(text(), 'prompt box')]");
+await check.click();
+
+
+
+
+
  
