@@ -14,6 +14,7 @@ await dialog.accept();
 const confirmAlert = await page.locator("//a[text()='Alert with OK & Cancel ']");
 await confirmAlert.click();
 
+
 await page.once("dialog", async(dialog)=>{
     console.log("Confirm ALert", dialog.message());
     await dialog.dismiss();
@@ -34,16 +35,22 @@ await page.once("dialog", async(dialog)=>{
 const promptBtn = await page.locator("//button[contains(text(), 'prompt box')]");
 await promptBtn.click();
 
+ //added by Ram
+    const clickbtn1 = await page.locator("//button[@onclick='confirmbox()']");
+await clickbtn1.click();
+
+const promptAlert1 = await page.locator("//a[text()= 'Alert with Textbox ']")
+await promptAlert1.click();
+
 });
+
 
  //if didn't giving accept playwright auotomatically cancel 
 
 
- //added by Ram
- const promptBtn = await page.locator("//button[contains(text(), 'prompt box')]");
-await promptBtn.click();
-const check = await page.locator("//button[contains(text(), 'prompt box')]");
-await check.click();
+
+ 
+
 
 
 
