@@ -36,13 +36,12 @@ const promptBtn = await page.locator("//button[contains(text(), 'prompt box')]")
 await promptBtn.click();
 
  //added by Ram
-    const clickbtn1 = await page.locator("//button[@onclick='confirmbox()']");
-await clickbtn1.click();
-
-const promptAlert1 = await page.locator("//a[text()= 'Alert with Textbox ']")
-await promptAlert1.click();
-
+    console.log("Prompt Message : ", dialog.message());
+    console.log("Prompt default value : ", dialog.defaultValue());
+     await dialog.accept("Prompt");
 });
+
+
 
 
  //if didn't giving accept playwright auotomatically cancel 
