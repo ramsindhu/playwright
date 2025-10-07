@@ -42,6 +42,8 @@ await promptBtn.click();
      console.log("Prompt Message : ", dialog.message());
     console.log("Prompt default value : ", dialog.defaultValue());
      await dialog.accept("Prompt");
+     console.log("Prompt default value : ", dialog.defaultValue());
+     await dialog.accept("Prompt");
 });
 
 
