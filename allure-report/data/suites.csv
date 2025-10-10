@@ -1,7 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","7678","Adactin POM","chromium","Thu Oct 09 15:58:46 IST 2025","passed","Thu Oct 09 15:58:54 IST 2025","","adactin.spec.js","",""
-"","30016","Amazon Window Handling","webkit","Thu Oct 09 15:53:28 IST 2025","broken","Thu Oct 09 15:53:58 IST 2025","","amazonWHandling.spec.js","",""
-"","11912","Adactin POM","firefox","Thu Oct 09 15:58:46 IST 2025","passed","Thu Oct 09 15:58:58 IST 2025","","adactin.spec.js","",""
-"","30012","Amazon Window Handling","firefox","Thu Oct 09 15:52:54 IST 2025","broken","Thu Oct 09 15:53:24 IST 2025","","amazonWHandling.spec.js","",""
-"","29581","Amazon Window Handling","chromium","Thu Oct 09 15:52:54 IST 2025","passed","Thu Oct 09 15:53:24 IST 2025","","amazonWHandling.spec.js","",""
-"","10093","Adactin POM","webkit","Thu Oct 09 15:58:56 IST 2025","passed","Thu Oct 09 15:59:06 IST 2025","","adactin.spec.js","",""
