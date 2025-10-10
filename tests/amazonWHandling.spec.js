@@ -14,22 +14,30 @@ const [page2] = await Promise.all([
     await page1.locator("(//div[@class='a-section a-spacing-small a-spacing-top-small'])[2]//descendant::a[3]").click()
 
      ]);
-     await page2.locator("//input[@id='add-to-cart-button']").click();
-    //  await page2.waitForLoadState('domcontentloaded')
-    //  await page2.screenshot({path: "screenshot/addtocart.png"})
-    await page2.locator("(//div[@id='ewc-compact-actions-container']//descendant::a)[1]").click
+     const check = await page2.locator("(//div[@id='desktop-breadcrumbs_feature_div']//descendant::a)[1]") 
+    //  const print = await check.textContent();
+    //  console.log(print);
+    //  await expect(check).toHaveText("Computers & Accessories")
 
+    await page2.waitForLoadState('domcontentloaded')
+    await page2.screenshot({path: "screenshot/newpage.png"})
+    await page2.locator("//input[@id='add-to-cart-button']").click();
+    await page2.waitForLoadState('domcontentloaded')
+    await page2.screenshot({path: "screenshot/addtocart.png"})
+    await page2.locator("(//div[@id='ewc-compact-actions-container']//descendant::a)[1]").click
+    await page2.waitForLoadState('domcontentloaded')
+    await page2.screenshot({path: "screenshot/details.png"})
+   const final = await page2.locator("//input[@name='proceedToRetailCheckout']")
+   await final.textContent()
+   console.log(final)
+   await expect(final).toHaveText("Proceed to checkout")
+   await page2.waitForTimeout(5000)
     });
 
 
 
-// const check = await page2.locator("(//div[@id='desktop-breadcrumbs_feature_div']//descendant::a)[1]") 
-// const print = await check.textContent();
-// console.log(print);
-// await expect(check).toHaveText("Computers & Accessories")
 
-// await page2.waitForLoadState('domcontentloaded')
-// await page2.screenshot({path: "screenshot/newpage.png"})
+
 // await page1.bringToFront()
 // await page2.close()
 

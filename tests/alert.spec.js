@@ -36,14 +36,14 @@ const promptBtn = await page.locator("//button[contains(text(), 'prompt box')]")
 await promptBtn.click();
 
  //added by Ram
-    console.log("Prompt Message : ", dialog.message());
-    console.log("Prompt default value : ", dialog.defaultValue());
-     await dialog.accept("Prompt");
-     console.log("Prompt Message : ", dialog.message());
-    console.log("Prompt default value : ", dialog.defaultValue());
-     await dialog.accept("Prompt");
-     console.log("Prompt default value : ", dialog.defaultValue());
-     await dialog.accept("Prompt");
+    // console.log("Prompt Message : ", dialog.message());
+    // // console.log("Prompt default value : ", dialog.defaultValue());
+    // //  await dialog.accept("Prompt");
+    // //  console.log("Prompt Message : ", dialog.message());
+    // // console.log("Prompt default value : ", dialog.defaultValue());
+    // //  await dialog.accept("Prompt");
+    // //  console.log("Prompt default value : ", dialog.defaultValue());
+    // //  await dialog.accept("Prompt");
 });
 
 

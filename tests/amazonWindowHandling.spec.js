@@ -14,6 +14,10 @@ const [page2] = await Promise.all([
     await page1.locator("(//div[@class='a-section a-spacing-small a-spacing-top-small'])[2]//descendant::a[3]").click()
     
     ])
+const check = await page2.locator("(//div[@id='desktop-breadcrumbs_feature_div']//descendant::a)[1]") 
+const print = await check.textContent();
+console.log(print);
+await expect(check).toHaveText("Computers & Accessories")
 
 await page2.waitForLoadState('domcontentloaded')
 await page2.screenshot({path: "screenshot/newpage.png"})

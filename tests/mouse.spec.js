@@ -1,5 +1,5 @@
 import {test} from "@playwright";
 
-test("", async({page})=>){
+test("", async({page})=>{
 
 })
